@@ -146,7 +146,13 @@ text-shadow: 4px 3px 0px #d64161;
 }
 
 @keyframes fact {
+  from{
+    margin-left: -910px;
+  }
 
+  to{
+margin-left: 190px;
+  }
 }
 
 .last-page{
@@ -161,6 +167,8 @@ text-shadow: 4px 3px 0px #d64161;
 .mouse{
   position: fixed;
   animation: mouse 10s infinite ease-in-out;
+  display: flex;
+  align-items: flex-end;
 }
  @keyframes mouse{
   0%{
