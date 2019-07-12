@@ -9,7 +9,7 @@ function Navbar(parentElement, links, style){
 Navbar.prototype.generate = function(){
   //generar dinamicamente los elementos 
   this.elements = `<nav class="nav">
-                     <img src="./image/flag.svg" height="42" width="42">
+                     <img class="logo" src="./image/flag.svg" height="42" width="42">
                       <ul class="nav-ul">`;
   this.links.forEach((link) => {
     this.elements += `

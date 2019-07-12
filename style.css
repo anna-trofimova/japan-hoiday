@@ -29,15 +29,6 @@ h1 {
   text-shadow: 4px 3px 0px #4040a1;
   }
 
-
-
-
-h2 {}
-
-h3 {
-
-}
-
 p {
   margin: 0;
 }
@@ -70,16 +61,21 @@ p {
 .nav-ul li a{
   text-decoration: none;
   color: #034f84;
+  transition: all 300ms;
 }
 
+.nav-ul li a:hover{
+  font-size: 20px;
+  
+}
+
+.logo{
+  margin: 5px;
+}
 .block{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*margin-block-start: 2em;
-  margin-block-end: 2em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;*/
   color: #111;
   font-family: "Courier New", Courier, monospace;
 }
@@ -91,7 +87,6 @@ p {
   margin: 50px;
 
 }
-
 
 #site-header {
   color: white;
@@ -106,12 +101,23 @@ p {
 #site-footer {
   color: #034f84;
   background: #8d9db6;
+  
 }
 
 
+/* ---- components ---- */
 
-.container {
-  margin: 0 20px;
+
+.loading{
+background-image: url("./image/loading2.gif");
+background-size: cover;
+background-position: center;
+height: 600px;
+width: 600px;
+text-align: end;
+font-size: 2em;
+color: white;
+text-shadow: 4px 3px 0px #d64161;
 }
 
 .title{
@@ -140,18 +146,36 @@ p {
 }
 
 @keyframes fact {
-  from {
-    margin-left:-910px;
-  }
 
-  to {
-    margin-left:190px;
-  }
 }
 
 .last-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-shadow: 4px 3px 0px #d64161;
+
 }
 
+.mouse{
+  position: fixed;
+  animation: mouse 10s infinite ease-in-out;
+}
+ @keyframes mouse{
+  0%{
+    top: 90%;
+    left: 40px;
+  }
+  50%{
+   top: 10%;
+   left: 40px;
+  }
+  100%{
+    top: 90%;
+    left: 40px;
+   }
+ }
 
 
 
@@ -180,8 +204,7 @@ p {
 
 
 
-/* ---- components ---- */
 
 
-/* ---- section ---- */
+
 

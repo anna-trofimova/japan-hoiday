@@ -6,7 +6,11 @@ function Loading (parentElement){
 }
 
 Loading.prototype.generate = function(){
-  this.elements = '<p>Stay here....</p>';
+  this.elements = `
+  <section class="loading">
+  <p>Stay here....</p>
+  </section>
+  `;
   this.render();
 }
 
