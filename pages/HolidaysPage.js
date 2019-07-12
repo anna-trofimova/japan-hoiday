@@ -27,7 +27,7 @@ HolidaysPage.prototype.generate = async function() {
      <h3>English name:${holiday.name}</h3>
      <p>Local name:${holiday.localName}</p>
      <p>Date:${holiday.date}</p>
-     <p>Launch year:${holiday.launchYear}</p>
+     <p>Global:${holiday.global}</p>
    </article>
    
    `;
